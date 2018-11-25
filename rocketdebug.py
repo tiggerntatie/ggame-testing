@@ -25,6 +25,7 @@ class _MathDynamic(metaclass=ABCMeta):
         MathApp._removeDynamic(self)
 
     def step(self):
+        print("_MathDynamic step")
         pass
     
     def Eval(self, val):
@@ -116,6 +117,7 @@ class _MathVisual(Sprite, _MathDynamic, metaclass=ABCMeta):
         self._sstdinputs = self._SI(*[0]*len(self._stdinputs))
 
     def step(self):
+        print("_MathVisual step")
         self._touchAsset()
         
     def _saveInputs(self, inputs):

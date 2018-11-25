@@ -365,8 +365,8 @@ class _Point(_MathVisual, metaclass=ABCMeta):
         """
         Perform periodic processing.
         """
-        pass
-        #self._touchAsset()
+        print("_Point step")
+        self._touchAsset()
 
     def physicalPointTouching(self, ppos):
         """

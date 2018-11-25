@@ -1173,6 +1173,7 @@ class MathApp(App):
         """
         MathApp.time = time()
         for spr in self._mathDynamicList:
+            print("MathApp step call to ", spr)
             spr.step()
 
     def _touchAllVisuals(self):

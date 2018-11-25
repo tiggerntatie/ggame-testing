@@ -14,6 +14,7 @@ from ggame.circle import Circle
 from ggame.timer import Timer
 from ggame.label import Label
 from ggame import Sprite
+from time import time
 
 
 class _MathDynamic(metaclass=ABCMeta):

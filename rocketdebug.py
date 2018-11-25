@@ -29,6 +29,7 @@ class _MathDynamic(metaclass=ABCMeta):
     
     def Eval(self, val):
         if callable(val):
+            print("eval", val)
             self._setDynamic() # dynamically defined .. must step
             return val
         else:
